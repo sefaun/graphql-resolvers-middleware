@@ -7,9 +7,27 @@
     "start": "nodemon --watch \"./**\"  --ext \"ts,json\" --exec \"ts-node index.ts\"",
     "build": "tsc"
   },
-  "author": "SEFAUN",
-  "license": "ISC",
-  "dependencies": {
+  "author": {
+    "name": "Sefa UN",
+    "email": "sefaun6654@hotmail.com",
+    "github": "https://github.com/sefaun"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sefaun/graphql-resolvers-middleware"
+  },
+  "license": "MIT",
+  "keywords": [
+    "GraphQL",
+    "Apollo Server",
+    "Resolvers",
+    "Javascript",
+    "Typescript",
+    "Node.js",
+    "middlewarejs",
+    "middleware"
+  ],
+  "devDependencies": {
     "apollo-server-express": "^3.10.2",
     "graphql": "^16.6.0"
   }
