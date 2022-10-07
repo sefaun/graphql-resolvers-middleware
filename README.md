@@ -33,11 +33,11 @@ import { UserList } from "./UserList"
 
 export const resolvers = {
   Query: {
-    userList: graphqlResolverslMiddleware(JwtCheck, /*add some funtions*/ UserList),
+    userList: graphqlResolverslMiddleware(JwtCheck, /*add some functions*/ UserList),
     //...
     //...
     //...
-    other: graphqlResolverslMiddleware(JwtCheck, Validation, /*add some funtions*/ OtherFunction),
+    other: graphqlResolverslMiddleware(JwtCheck, Validation, /*add some functions*/ OtherFunction),
   }
 }
 ```
