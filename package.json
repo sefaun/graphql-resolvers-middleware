@@ -1,0 +1,16 @@
+{
+  "name": "graphql-resolvers-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "scripts": {
+    "start": "nodemon --watch \"./**\"  --ext \"ts,json\" --exec \"ts-node index.ts\"",
+    "build": "tsc"
+  },
+  "author": "SEFAUN",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.10.2",
+    "graphql": "^16.6.0"
+  }
+}
