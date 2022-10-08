@@ -9,8 +9,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.graphqlResolverslMiddleware = void 0;
-function graphqlResolverslMiddleware(...[]) {
+exports.graphqlResolversMiddleware = void 0;
+function graphqlResolversMiddleware(...[]) {
     const slice = Array.prototype.slice;
     const stacks = slice.call(arguments);
     const that = this;
@@ -50,5 +50,5 @@ function graphqlResolverslMiddleware(...[]) {
         });
     };
 }
-exports.graphqlResolverslMiddleware = graphqlResolverslMiddleware;
+exports.graphqlResolversMiddleware = graphqlResolversMiddleware;
 //# sourceMappingURL=index.js.map

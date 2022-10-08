@@ -25,7 +25,7 @@ type userListPayload {
 
 File `resolvers.ts`
 ```ts
-import { graphqlResolverslMiddleware } from "graphql-resolvers-middleware"
+import { graphqlResolversMiddleware } from "graphql-resolvers-middleware"
 
 import { JwtCheck } from "./JwtCheck"
 import { UserList } from "./UserList"
@@ -33,11 +33,11 @@ import { UserList } from "./UserList"
 
 export const resolvers = {
   Query: {
-    userList: graphqlResolverslMiddleware(JwtCheck, /*add some functions*/ UserList),
+    userList: graphqlResolversMiddleware(JwtCheck, /*add some functions*/ UserList),
     //...
     //...
     //...
-    other: graphqlResolverslMiddleware(JwtCheck, Validation, /*add some functions*/ OtherFunction),
+    other: graphqlResolversMiddleware(JwtCheck, Validation, /*add some functions*/ OtherFunction),
   }
 }
 ```

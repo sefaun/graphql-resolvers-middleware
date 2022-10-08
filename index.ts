@@ -1,4 +1,4 @@
-export function graphqlResolverslMiddleware(...[]: Iterable<Function>): any {
+export function graphqlResolversMiddleware(...[]: Iterable<Function>): any {
   const slice = Array.prototype.slice
 
   const stacks = slice.call(arguments)

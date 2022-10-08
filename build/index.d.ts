@@ -1,1 +1,1 @@
-export declare function graphqlResolverslMiddleware(...[]: Iterable<Function>): any;
+export declare function graphqlResolversMiddleware(...[]: Iterable<Function>): any;
