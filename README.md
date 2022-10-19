@@ -46,7 +46,7 @@ File `JwtCheck.ts`
 ```ts
 export const JwtCheck = async (parent, args, context, info, next, returns) => {
   try {
-    const token = req.headers.authorization.split("Bearer ")[1]
+    const token = context.req.headers.authorization.split("Bearer ")[1]
 
     const _decoded = jwt.verify(token, process.env.JWT_SECRET_KEY)
 
