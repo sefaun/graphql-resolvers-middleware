@@ -10,8 +10,6 @@ This function returns your graphql api response to front-end.
 ## Example
 File `userListType.ts`
 ```ts
-import { gql } from 'apollo-server-express'
-
 export const userListType = gql`
 type Query {
   userList: userListPayload
@@ -35,9 +33,7 @@ export const resolvers = {
   Query: {
     userList: graphqlResolversMiddleware(JwtCheck, /*add some functions*/ UserList),
     //...
-    //...
-    //...
-    other: graphqlResolversMiddleware(JwtCheck, Validation, /*add some functions*/ OtherFunction),
+    others: graphqlResolversMiddleware(JwtCheck, Validation, /*add some functions*/ OtherFunction),
   }
 }
 ```
@@ -69,27 +65,5 @@ export const UserList = async (parent, args, context, info, next, returns) => {
   } catch (error) {
     return returns({ result: "error" })
   }
-}
-```
-
-File `graphql.ts`
-```ts
-import { Application } from 'express'
-import { ApolloServer } from 'apollo-server-express'
-
-import { userListType } from './userListType'
-import { resolvers } from './resolvers'
-
-
-export const GraphQLApiV1 = async (app: Application) => {
-  const server = new ApolloServer({
-    typeDefs: userListType,
-    resolvers: resolvers,
-    //...
-  })
-
-  await server.start()
-
-  server.applyMiddleware({ app, path: '/graphql/v1' })
 }
 ```

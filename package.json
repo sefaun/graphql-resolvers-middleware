@@ -1,6 +1,6 @@
 {
   "name": "graphql-resolvers-middleware",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "./build/index.js",
   "scripts": {
@@ -26,9 +26,5 @@
     "Node.js",
     "middlewarejs",
     "middleware"
-  ],
-  "devDependencies": {
-    "apollo-server-express": "^3.10.2",
-    "graphql": "^16.6.0"
-  }
+  ]
 }
